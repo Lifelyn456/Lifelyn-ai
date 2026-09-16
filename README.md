@@ -12,6 +12,8 @@
   <img src="https://img.shields.io/badge/license-unlicensed-lightgrey" alt="Unlicensed" />
 </p>
 
+<p align="center">📖 <a href="https://cjay-1.gitbook.io/lifelyn-docs/">Documentation</a></p>
+
 Private FastAPI service for evidence-bound clinical record processing behind [Lifelyn](https://github.com/Lifelyn456/lifelyn-web). It never faces the public internet and never makes an authorization decision — [`lifelyn-api`](https://github.com/Lifelyn456/Lifelyn-api) authenticates every request with a short-lived service JWT and supplies only the evidence the current actor is already authorized to see.
 
 ## Table of contents

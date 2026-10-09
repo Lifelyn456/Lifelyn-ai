@@ -79,8 +79,20 @@ class GoldenReport:
     def categories_covered(self) -> set[str]:
         return {result.category for result in self.results}
 
+    @property
+    def category_scores(self) -> dict[str, tuple[int, int]]:
+        """Passed and total case counts per category."""
+        totals: dict[str, list[int]] = {}
+        for result in self.results:
+            counts = totals.setdefault(result.category, [0, 0])
+            counts[0] += result.passed
+            counts[1] += 1
+        return {category: (counts[0], counts[1]) for category, counts in sorted(totals.items())}
+
     def summary(self) -> str:
         lines = [f"Golden eval: {sum(r.passed for r in self.results)}/{len(self.results)} passed"]
+        for category, (passed, total) in self.category_scores.items():
+            lines.append(f"  {category}: {passed}/{total}")
         for result in self.results:
             status = "PASS" if result.passed else "FAIL"
             lines.append(f"  [{status}] {result.category}/{result.id}")

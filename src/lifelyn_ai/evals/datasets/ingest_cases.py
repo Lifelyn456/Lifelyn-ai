@@ -7,6 +7,7 @@ after parsing a document. PDF/OCR decoding is covered separately by parser.py's 
 
 from typing import Any
 
+from .ingest_cases_extended import EXTENDED_INGEST_CASES
 from .types import IngestCase
 
 
@@ -122,3 +123,5 @@ GOLDEN_INGEST_CASES: list[IngestCase] = [
         check=_check_undated_fact_not_fabricated,
     ),
 ]
+
+GOLDEN_INGEST_CASES.extend(EXTENDED_INGEST_CASES)

@@ -76,6 +76,10 @@ uv build
 
 Golden synthetic evals cover dates, units, conflicts, no-evidence questions, unsupported clinical advice, self-report distinction, and citation fidelity — a grounding regression blocks merge.
 
+## Evaluation
+
+A golden evaluation suite runs inside `pytest` and blocks any change that breaks extraction, dates and units, citations or grounding. See [`docs/EVALUATION.md`](docs/EVALUATION.md) for what it covers, how to run it and how to add a case.
+
 ## Contributing
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md). Found a security issue? See [`SECURITY.md`](SECURITY.md) instead of opening a public issue.

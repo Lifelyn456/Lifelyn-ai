@@ -9,7 +9,7 @@
   <a href="https://github.com/Lifelyn456/Lifelyn-ai/actions/workflows/ci.yml"><img src="https://github.com/Lifelyn456/Lifelyn-ai/actions/workflows/ci.yml/badge.svg" alt="AI checks" /></a>
   <img src="https://img.shields.io/badge/stack-FastAPI%20%2F%20Python%203.14-009688" alt="FastAPI / Python 3.14" />
   <img src="https://img.shields.io/badge/access-private%2C%20service--to--service%20only-7C3AED" alt="Private, service-to-service only" />
-  <img src="https://img.shields.io/badge/license-unlicensed-lightgrey" alt="Unlicensed" />
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Lifelyn456/Lifelyn-ai?color=blue" alt="License: MIT" /></a>
 </p>
 
 <p align="center">📖 <a href="https://cjay-1.gitbook.io/lifelyn-docs/">Documentation</a></p>
